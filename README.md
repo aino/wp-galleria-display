@@ -3,7 +3,7 @@ WP Galleria Display
 
 Simple WordPress plugin to add Galleria Display galleries to posts.
 
-#How to use
+##How to use
 After installing, you will get a new icon in your toolbar:
 ![Galleria Display Logo](i/gd-logo.png?raw=true)
 
