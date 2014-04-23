@@ -4,7 +4,7 @@ WordPress Galleria Display
 Simple WordPress plugin to add [Galleria Display](http://www.galleriadisplay.com) galleries to posts and pages.
 
 ##Installing
-[Download the zip file](/archive/master.zip)
+[Download the zip file](/aino/wp-galleria-display/archive/master.zip)
 
 Then, either:
 
