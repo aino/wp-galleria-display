@@ -17,15 +17,26 @@
             // Insert content when the window form is submitted
             // Split input on / since user might paste the full script tag
             gId = e.data['gd-id-input'].split('/')
-            if ( gId.length > 1 ) {
+
+            if ( gId instanceof Array && gId.length == 6 ) {
               // Assume user has pasted full script tag
               gId = gId[3]
             } else {
               // Else, it's probably just the ID
               gId = gId[0]
-              // Return on empty string
-              if ( gId.length < 1 ) return false
             }
+
+            // Return on empty string
+            if ( gId.length < 1 ) {
+              ed.windowManager.alert( 'Please enter a valid Galleria Display id or script tag.' )
+              return false
+            }
+            // Return on non sha1
+            if ( !gId.match( /^[0-9a-f]{40}$/ ) ) {
+              ed.windowManager.alert( 'Please enter a valid Galleria Display id.' )
+              return false
+            }
+            
             shortcode = '[galleriadisplay id="' + gId + '"/]'
             ed.insertContent( shortcode )
           }
@@ -44,10 +55,10 @@
     // 
     getInfo: function() {
       return {
-          longname: 'Galleria Display',
+          longname: 'WordpPress Galleria Display',
           author: 'Aino',
           authorurl: 'http://aino.com/',
-          version : '1.0'
+          version : '1.0.0'
       }
     }
   })

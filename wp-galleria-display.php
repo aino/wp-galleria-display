@@ -2,11 +2,11 @@
 /*
 Plugin Name: Galleria Display
 Plugin URI: http://www.galleriadisplay.com
-Description: Embed Galleria Display galleries in WordPress
-Version: 1.0
+Description: Embed Galleria Display galleries in WordPress with shortcode or from a menu
+Version: 1.0.0
 Author: Aino
 Author URI: http://www.aino.com
-License:
+License: GPLv2
 */
 if ( !class_exists('GalleriaDisplay') ) {
     
@@ -39,8 +39,16 @@ if ( !class_exists('GalleriaDisplay') ) {
         }
 
         public function galleriadisplay_shortcode( $attr ) {
-            $atts = shortcode_atts( array( 'id' => 'ID' ), $attr );
-            $res = '<script src="//neon.galleriadisplay.com/' . $atts['id'] . '/init.js"></script>';
+            // Get id from shortcode
+            extract( shortcode_atts( array(
+              'id' => '0'
+            ), $attr ) );
+
+            if ( strlen( $id ) == 40 && ctype_xdigit( $id ) ) {
+                $res = '<script src="//neon.galleriadisplay.com/' . $id . '/init.js"></script>';
+            } else {
+                $res = '<div class="">There seems to be something wrong with the id for this gallery.</div>';
+            }
 
             return $res;
         }

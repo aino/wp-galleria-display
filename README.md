@@ -1,16 +1,41 @@
-WP Galleria Display
-===================
+WordPress Galleria Display
+==========================
 
-Simple WordPress plugin to add Galleria Display galleries to posts.
-
-##How to use
-After installing, you will get a new icon in your toolbar:
-![Galleria Display Logo](i/gd-logo.png?raw=true)
-
-Clicking it will open a dialog. Simply paste your gallery id (or the whole script tag from Galleria Display) och press OK, and the necessary shortcode will be generated for you. Publish.
+Simple WordPress plugin to add [Galleria Display](http://www.galleriadisplay.com) galleries to posts and pages.
 
 ##Installing
-For now, download and unzip to your wp-content/plugins/ folder
+[Download the zip file](/archive/master.zip)
+
+Then, either:
+
+1. Unzip to a temporary folder.
+2. Upload the `wp-galleria-diplay` folder to the `/wp-content/plugins/` directory
+3. Activate the plugin through the 'Plugins' menu in WordPress
+
+or:
+
+1. Navigate to the 'Add New' in the plugins dashboard
+2. Navigate to the 'Upload' area
+3. Select `wp-galleria-display.zip` from your computer
+4. Click 'Install Now'
+5. Activate the plugin in the Plugin dashboard
+
+##How to use
+###1. Get the Gallery code
+Log in to [Galleria Display](http://www.galleriadisplay.com) and pick a gallery. Click "Publish" and copy the text in the popup.
+
+![Screenshot: Getting the code](assets/screenshot-1.png?raw=true)
+
+###2. Insert the code
+Click the Galleria Display icon in your toolbar. It will open a dialog. Simply paste the text you copied from Galleria Display and press OK. The necessary shortcode will be generated for you and inserted into your code. Done!
+
+![Screenshot: Finding the button](assets/screenshot-2.png?raw=true)
+
+###Using shortcodes
+If you prefer doing things yourself, simpy copy the id part of your Galleria Display script and put it in a shortcode.
+```php
+[galleriadisplay id="GALLERY_ID_HERE" /]
+```
 
 ##Compability
-Tested in WordPress 3.9, which uses TinyMCE 4.x. Will probably not work in earlier versions, due to API changes in TinyMCE.
+Tested in WordPress 3.9, which uses TinyMCE 4.x. UI will probably not work in earlier versions, due to API changes in TinyMCE. Shortcodes should work fine though.
