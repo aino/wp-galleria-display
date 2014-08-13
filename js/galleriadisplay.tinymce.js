@@ -58,7 +58,7 @@
           longname: 'WordpPress Galleria Display',
           author: 'Aino',
           authorurl: 'http://aino.com/',
-          version : '1.0.0'
+          version : '1.0.1'
       }
     }
   })

@@ -2,8 +2,8 @@
 Contributors: Aino.com
 Tags: galleria display, gallery, image gallery
 Requires at least: 3.9
-Tested up to: 3.9
-Stable tag: 1.0.0
+Tested up to: 4.0
+Stable tag: 1.0.1
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -40,6 +40,10 @@ If you prefer doing things yourself, simpy copy the id part of your Galleria Dis
 2. In WordPress. click the blue "D" in the menu and paste the code from Galleria Display (`Ctrl+V` or `Cmd+V` respectively).
 
 == Changelog ==
+
+= 1.0.1 =
+* Tested and working with WordPress 4.0
+* Removed TinyMCE button for < 3.9 users (Shortcodes still work though)
 
 = 1.0.0 =
 * First commit. 
