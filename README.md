@@ -9,14 +9,14 @@ Simple WordPress plugin to add [Galleria Display](http://www.galleriadisplay.com
 Then, either:
 
 1. Unzip to a temporary folder.
-2. Upload the `wp-galleria-diplay` folder to the `/wp-content/plugins/` directory
+2. Upload the `wp-galleria-display` folder to the `/wp-content/plugins/` directory
 3. Activate the plugin through the 'Plugins' menu in WordPress
 
 or:
 
 1. Navigate to the 'Add New' in the plugins dashboard
 2. Navigate to the 'Upload' area
-3. Select `wp-galleria-display.zip` from your computer
+3. Select `wp-galleria-display-master.zip` from your computer
 4. Click 'Install Now'
 5. Activate the plugin in the Plugin dashboard
 
