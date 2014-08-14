@@ -29,12 +29,12 @@ if ( !class_exists('GalleriaDisplay') ) {
       }
 
       function galleriadisplay_register_admin_styles() {
-        wp_register_style( 'galleriadisplay_admin_css', plugins_url('/css/galleriadisplay.admin.css', __file__), false, '1.0.2' );
+        wp_register_style( 'galleriadisplay_admin_css', plugins_url( '/css/galleriadisplay.admin.css', __file__ ), false );
         wp_enqueue_style( 'galleriadisplay_admin_css' );
       }
 
       function galleriadisplay_register_styles() {
-        wp_register_style( 'galleriadisplay_css', plugins_url('/css/galleriadisplay.css', __file__), false, '1.0.2' );
+        wp_register_style( 'galleriadisplay_css', plugins_url( '/css/galleriadisplay.css', __file__ ), false );
         wp_enqueue_style( 'galleriadisplay_css' );
       }
 
@@ -44,7 +44,7 @@ if ( !class_exists('GalleriaDisplay') ) {
       }
 
       function galleriadisplay_register_tinymce_javascript( $plugin_array ) {
-        $plugin_array['galleriadisplay'] = plugins_url('/js/galleriadisplay.tinymce.js', __file__);
+        $plugin_array['galleriadisplay'] = plugins_url( '/js/galleriadisplay.tinymce.js', __file__ );
         return $plugin_array;
       }
 
