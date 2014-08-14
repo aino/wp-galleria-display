@@ -15,12 +15,21 @@
           ],
           onsubmit: function(e) {
             // Insert content when the window form is submitted
-            // Split input on / since user might paste the full script tag
+            // Split input on / since user might paste the full script tag or a shortcode
             gId = e.data['gd-id-input'].split('/')
+            console.log(gId)
 
-            if ( gId instanceof Array && gId.length == 6 ) {
-              // Assume user has pasted full script tag
-              gId = gId[3]
+            if ( gId instanceof Array ) {
+              if ( gId.length == 6 ) {
+                // Assume user has pasted full script tag
+                gId = gId[3]
+              } else if ( gId.length == 2 ) {
+                // Assume user has pasted a shortcode
+                gId = gId[0]
+                var s = gId.indexOf( '"' ) + 1
+                var e = gId.indexOf( '"' , s)
+                gId = gId.substring( s, e )
+              }
             } else {
               // Else, it's probably just the ID
               gId = gId[0]
@@ -58,7 +67,7 @@
           longname: 'WordpPress Galleria Display',
           author: 'Aino',
           authorurl: 'http://aino.com/',
-          version : '1.0.1'
+          version : '1.0.2'
       }
     }
   })
