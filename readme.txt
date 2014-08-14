@@ -3,7 +3,7 @@ Contributors: Aino.com
 Tags: galleria display, gallery, image gallery
 Requires at least: 3.2
 Tested up to: 4.0
-Stable tag: 1.0.2
+Stable tag: 1.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -43,6 +43,9 @@ You could also click the Galleria Display icon in your toolbar. It will open a d
 2. In WordPress, click the blue "D" in the menu and paste the code from Galleria Display (`Ctrl+V` or `Cmd+V` respectively).
 
 == Changelog ==
+
+= 1.0.3 =
+* Minor fixes
 
 = 1.0.2 =
 * Tested and working with WordPress 3.2 and up (default themes).

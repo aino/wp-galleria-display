@@ -3,7 +3,7 @@
 Plugin Name: Galleria Display
 Plugin URI: http://www.galleriadisplay.com
 Description: Embed Galleria Display galleries in WordPress with shortcode or from a menu
-Version: 1.0.2
+Version: 1.0.3
 Author: Aino
 Author URI: http://www.aino.com
 License: GPLv2

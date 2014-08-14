@@ -48,6 +48,9 @@ Shortcodes should work fine anywhere.
 
 ##Changelog
 
+###1.0.3
+* Minor fixes
+
 ###1.0.2
 * Tested and working with WordPress 3.2 and up (default themes).
 * GUI dialog now accepts shortcodes as well.
